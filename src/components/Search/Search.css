@@ -1,0 +1,160 @@
+.search-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-window {
+  position: fixed;
+  top: 40px;
+  background: transparent;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+  width: 280px;
+  min-height: 80px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.search-query {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 10px;
+  border-bottom: 1px solid #333;
+}
+
+.search-query input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.search-query input:focus {
+  outline: none;
+}
+
+.clear-button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: blue;
+}
+
+.tab-buttons {
+  position: fixed;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.tab-buttons button {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  transition: background 0.2s ease-in-out;
+}
+
+.tab-buttons button:hover {
+  background: #555;
+}
+
+.tab-buttons button:focus {
+  font-weight: 600;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.search-button-active {
+  background: #555;
+  border: 1px solid #777;
+}
+
+.coin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coins-list {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+.coins-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coins-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.coins-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.coins-list::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.coin-name {
+  flex: 1;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.star {
+  cursor: pointer;
+  padding-right: 5px;
+  line-height: 14px;
+  font-size: 20px;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}

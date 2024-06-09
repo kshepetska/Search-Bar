@@ -1,0 +1,8 @@
+html {
+  background-color: black;
+  padding: 0;
+}
+
+html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+  padding-top: initial;
+}
