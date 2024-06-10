@@ -14,7 +14,6 @@
   border: 1px solid #333;
   border-radius: 8px;
   width: 280px;
-  min-height: 80px;
   padding: 20px;
   z-index: 1000;
 }
@@ -35,8 +34,6 @@
   background: transparent;
   color: white;
   font-size: 14px;
-  font-weight: 300;
-  padding: 5px;
 }
 
 .search-query input:focus {
@@ -51,19 +48,15 @@
 }
 
 .tab-buttons {
-  position: fixed;
-  background-color: #000;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  margin: 10px 0;
 }
 
 .tab-buttons button {
-  width: 100%;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
+  white-space: nowrap;
   margin: 0 5px;
+  margin-right: 50px;
   border: none;
   border-radius: 4px;
   background: transparent;
@@ -78,7 +71,7 @@
   background: #555;
 }
 
-.tab-buttons button:focus {
+.tab-buttons button.active {
   font-weight: 600;
 }
 
