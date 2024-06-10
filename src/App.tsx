@@ -1,7 +1,7 @@
 import React from 'react';
-import { HomePage } from './HomePage';
+import Search from './components/Search/Search';
 import './App.css';
 
 export const App: React.FC = () => {
-  return <HomePage />;
+  return <Search />;
 };
